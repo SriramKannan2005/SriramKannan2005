@@ -1,6 +1,4 @@
-<a href="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sriram%20Kannan&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=ML%20Developer%20%7C%20Generative%20%26%20Agentic%20AI%20%7C%20Data%20Analytics&descAlignY=62&descSize=16">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sriram%20Kannan&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=ML%20Developer%20%7C%20Generative%20%26%20Agentic%20AI%20%7C%20Data%20Analytics&descAlignY=62&descSize=16" alt="header"/>
-</a>
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sriram%20Kannan&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=ML%20Developer%20%7C%20Generative%20%26%20Agentic%20AI%20%7C%20Data%20Analytics&descAlignY=62&descSize=16)
 
 <div align="center">
   <a href="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&width=750&lines=AI+%26+ML+Developer+%F0%9F%A4%96;Generative+%26+Agentic+AI+Builder+%F0%9F%9A%80;2%C3%97+National+Hackathon+Winner+%F0%9F%8F%86;Computer+Vision+%7C+NLP+%7C+RAG+Systems">
@@ -77,7 +75,7 @@ class Developer:
         "System Design for ML at Scale"
     ]
 
-    internships = 3  # NullClass | TARAS Systems | The Developers Arena
+    internships    = 3  # NullClass | TARAS Systems | The Developers Arena
     hackathon_wins = 2  # 2nd @ HackSphere-25 | Top-10 @ HACKSPORA-2K25
 
     fun_fact = "I build AI systems by day and explore stock markets by night 📈"
@@ -108,7 +106,7 @@ class Developer:
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=google&logoColor=white)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat-square&logo=yolo&logoColor=black)
-![Scikit--learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white)
@@ -159,12 +157,9 @@ class Developer:
 ## 📊 GitHub Stats
 
 <div align="center">
-  <a href="https://github-readme-stats.vercel.app/api?username=SriramKannan2005&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=10">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SriramKannan2005&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=10" alt="Sriram's GitHub Stats"/>
-  </a>
-  <a href="https://github-readme-stats.vercel.app/api/top-langs/?username=SriramKannan2005&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&text_color=c9d1d9&langs_count=8&border_radius=10">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SriramKannan2005&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&text_color=c9d1d9&langs_count=8&border_radius=10" alt="Top Languages"/>
-  </a>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SriramKannan2005&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=10&cache_seconds=1800" alt="Sriram's GitHub Stats"/>
+  &nbsp;&nbsp;
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SriramKannan2005&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&text_color=c9d1d9&langs_count=8&border_radius=10&cache_seconds=1800" alt="Top Languages"/>
 </div>
 
 ---
@@ -265,10 +260,10 @@ class Developer:
 | Project | Stack | Highlights | Links |
 |---------|-------|------------|-------|
 | 🧠 **Smart Exam Evaluator** | Python · Gemini AI · OpenCV · Flask · JavaScript | AI-powered exam grading from handwritten scans; **~75% reduction** in evaluation time vs. manual; multi-page MCQ support; Excel report generation with color-coded analytics | [GitHub](https://github.com/SriramKannan2005/Smart-Exam-Evaluvator) |
-| 📚 **Info-Nexus — GenAI Multi-Document Intelligence** | LangChain · Gemini AI · FAISS · Flask · Firebase · Chart.js | RAG pipeline ingesting **10+ documents** simultaneously; semantic search across **50,000+ tokens**; cross-document Q&A with source attribution; **<3s** response time; real-time confidence scoring with Chart.js visualizations | [GitHub](https://github.com/SriramKannan2005/Info-Nexus) |
-| 🎬 **CineHome+ — AI-Powered Personal Cinema** | Python · OpenCV · MediaPipe · Gemini AI · Flask · React | Gesture-controlled OTT platform with **93% accuracy** for play/pause/seek/volume; collaborative + content-based recommendation engine; **~50% reduction** in browsing time before content selection | [GitHub](https://github.com/SriramKannan2005/media-player) |
+| 📚 **Info-Nexus — GenAI Multi-Document Intelligence** | LangChain · Gemini AI · FAISS · Flask · Firebase · Chart.js | RAG pipeline ingesting **10+ documents** simultaneously; semantic search across **50,000+ tokens**; cross-document Q&A with source attribution; **<3s** response time; real-time confidence scoring | [GitHub](https://github.com/SriramKannan2005/Info-Nexus) |
+| 🎬 **CineHome+ — AI-Powered Personal Cinema** | Python · OpenCV · MediaPipe · Gemini AI · Flask · React | Gesture-controlled OTT platform with **93% accuracy** for play/pause/seek/volume; collaborative + content-based recommendation engine; **~50% reduction** in browsing time | [GitHub](https://github.com/SriramKannan2005/media-player) |
 | 🌸 **FloraMart — Flower Delivery Platform** | Spring Boot · React · JWT · MySQL · REST API | Full-stack e-commerce with JWT authentication, product catalog, and order management; microservice-ready Spring Boot backend | [Frontend](https://github.com/SriramKannan2005/flower-delivery-application-frontend-) · [Backend](https://github.com/SriramKannan2005/flower-delivery-application-backend-) |
-| 📊 **Job Analytics Dashboard** | Python · Pandas · Tableau · Jupyter · EDA | End-to-end analytics pipeline processing **100K+ job market records**; geospatial hiring maps; surfaced **3 growth markets** and **5 skill clusters**; stakeholder dashboard suite | [GitHub](https://github.com/SriramKannan2005/Job-Analytics-Dashboard) |
+| 📊 **Job Analytics Dashboard** | Python · Pandas · Tableau · Jupyter · EDA | End-to-end analytics pipeline processing **100K+ job market records**; geospatial hiring maps; surfaced **3 growth markets** and **5 skill clusters** | [GitHub](https://github.com/SriramKannan2005/Job-Analytics-Dashboard) |
 
 </div>
 
@@ -297,9 +292,9 @@ class Developer:
 
 | Certification | Issuer | Domain |
 |---------------|--------|--------|
-| 🐍 Python Programming | Coursera | Programming |
+| 🐍 Python Programming | GUVI | Programming |
 | 🐍 Python (Basic) | HackerRank | Programming |
-| 🤖 ChatGPT for Everyone | Coursera | Generative AI |
+| 🤖 ChatGPT for Everyone | GUVI | Generative AI |
 
 </div>
 
@@ -332,9 +327,7 @@ class Developer:
 
 ---
 
-<a href="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" alt="footer"/>
-</a>
+![footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling)
 
 <div align="center">
 
