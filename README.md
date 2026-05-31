@@ -187,7 +187,65 @@ class Developer:
 ## 🏆 Trophy Wall
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=SriramKannan2005&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=4" alt="Trophies"/>
+<svg width="860" height="110" viewBox="0 0 860 110" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,sans-serif">
+
+  <!-- Trophy 1: Hackathon Winner -->
+  <rect x="0"   y="0" width="118" height="105" rx="8" fill="#0d1117" stroke="#70a5fd" stroke-width="1"/>
+  <text x="59"  y="28" text-anchor="middle" font-size="28">🏆</text>
+  <text x="59"  y="52" text-anchor="middle" font-size="9" fill="#70a5fd" font-weight="600">HACKATHON</text>
+  <text x="59"  y="65" text-anchor="middle" font-size="9" fill="#70a5fd" font-weight="600">WINNER</text>
+  <text x="59"  y="82" text-anchor="middle" font-size="8" fill="#8b949e">2× National</text>
+  <text x="59"  y="95" text-anchor="middle" font-size="8" fill="#8b949e">Level</text>
+
+  <!-- Trophy 2: Internships -->
+  <rect x="124" y="0" width="118" height="105" rx="8" fill="#0d1117" stroke="#bf91f3" stroke-width="1"/>
+  <text x="183" y="28" text-anchor="middle" font-size="28">💼</text>
+  <text x="183" y="52" text-anchor="middle" font-size="9" fill="#bf91f3" font-weight="600">INTERNSHIPS</text>
+  <text x="183" y="65" text-anchor="middle" font-size="9" fill="#bf91f3" font-weight="600">COMPLETED</text>
+  <text x="183" y="82" text-anchor="middle" font-size="8" fill="#8b949e">3 Industry</text>
+  <text x="183" y="95" text-anchor="middle" font-size="8" fill="#8b949e">Internships</text>
+
+  <!-- Trophy 3: Stars -->
+  <rect x="248" y="0" width="118" height="105" rx="8" fill="#0d1117" stroke="#38bdae" stroke-width="1"/>
+  <text x="307" y="28" text-anchor="middle" font-size="28">⭐</text>
+  <text x="307" y="52" text-anchor="middle" font-size="9" fill="#38bdae" font-weight="600">OPEN SOURCE</text>
+  <text x="307" y="65" text-anchor="middle" font-size="9" fill="#38bdae" font-weight="600">PROJECTS</text>
+  <text x="307" y="82" text-anchor="middle" font-size="8" fill="#8b949e">5+ Production</text>
+  <text x="307" y="95" text-anchor="middle" font-size="8" fill="#8b949e">Projects</text>
+
+  <!-- Trophy 4: AI/ML -->
+  <rect x="372" y="0" width="118" height="105" rx="8" fill="#0d1117" stroke="#70a5fd" stroke-width="1"/>
+  <text x="431" y="28" text-anchor="middle" font-size="28">🤖</text>
+  <text x="431" y="52" text-anchor="middle" font-size="9" fill="#70a5fd" font-weight="600">AI &amp; ML</text>
+  <text x="431" y="65" text-anchor="middle" font-size="9" fill="#70a5fd" font-weight="600">DEVELOPER</text>
+  <text x="431" y="82" text-anchor="middle" font-size="8" fill="#8b949e">CV · NLP · RAG</text>
+  <text x="431" y="95" text-anchor="middle" font-size="8" fill="#8b949e">GenAI · Agents</text>
+
+  <!-- Trophy 5: CGPA -->
+  <rect x="496" y="0" width="118" height="105" rx="8" fill="#0d1117" stroke="#bf91f3" stroke-width="1"/>
+  <text x="555" y="28" text-anchor="middle" font-size="28">🎓</text>
+  <text x="555" y="52" text-anchor="middle" font-size="9" fill="#bf91f3" font-weight="600">ACADEMIC</text>
+  <text x="555" y="65" text-anchor="middle" font-size="9" fill="#bf91f3" font-weight="600">EXCELLENCE</text>
+  <text x="555" y="82" text-anchor="middle" font-size="8" fill="#8b949e">CGPA 8.4/10</text>
+  <text x="555" y="95" text-anchor="middle" font-size="8" fill="#8b949e">AI &amp; DS</text>
+
+  <!-- Trophy 6: Grant -->
+  <rect x="620" y="0" width="118" height="105" rx="8" fill="#0d1117" stroke="#38bdae" stroke-width="1"/>
+  <text x="679" y="28" text-anchor="middle" font-size="28">💡</text>
+  <text x="679" y="52" text-anchor="middle" font-size="9" fill="#38bdae" font-weight="600">INNOVATION</text>
+  <text x="679" y="65" text-anchor="middle" font-size="9" fill="#38bdae" font-weight="600">GRANT</text>
+  <text x="679" y="82" text-anchor="middle" font-size="8" fill="#8b949e">₹15,000</text>
+  <text x="679" y="95" text-anchor="middle" font-size="8" fill="#8b949e">Team Grant</text>
+
+  <!-- Trophy 7: Multi-Stack -->
+  <rect x="744" y="0" width="116" height="105" rx="8" fill="#0d1117" stroke="#70a5fd" stroke-width="1"/>
+  <text x="802" y="28" text-anchor="middle" font-size="28">🚀</text>
+  <text x="802" y="52" text-anchor="middle" font-size="9" fill="#70a5fd" font-weight="600">MULTI-STACK</text>
+  <text x="802" y="65" text-anchor="middle" font-size="9" fill="#70a5fd" font-weight="600">BUILDER</text>
+  <text x="802" y="82" text-anchor="middle" font-size="8" fill="#8b949e">Python·Java</text>
+  <text x="802" y="95" text-anchor="middle" font-size="8" fill="#8b949e">Flask·React</text>
+
+</svg>
 </div>
 
 ---
