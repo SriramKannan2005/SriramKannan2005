@@ -1,0 +1,27 @@
+<svg width="495" height="195" viewBox="0 0 495 195"
+     fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: 600 17px "Segoe UI",sans-serif; fill:#70a5fd }
+    .label { font: 400 13px "Segoe UI",sans-serif; fill:#c9d1d9 }
+    .value { font: 600 14px "Segoe UI",sans-serif; fill:#c9d1d9 }
+    .icon  { fill:#bf91f3 }
+  </style>
+  <rect width="495" height="195" rx="10" fill="#0d1117"/>
+  <text x="25" y="35" class="title">📊 SriramKannan2005's GitHub Stats</text>
+
+  <!-- Stars -->
+  <text x="25"  y="75" class="label">⭐ Total Stars Earned:</text>
+  <text x="370" y="75" class="value">5</text>
+
+  <!-- Commits -->
+  <text x="25"  y="105" class="label">📦 Total Commits (this year):</text>
+  <text x="370" y="105" class="value">393</text>
+
+  <!-- PRs -->
+  <text x="25"  y="135" class="label">🔀 Total PRs:</text>
+  <text x="370" y="135" class="value">3</text>
+
+  <!-- Issues -->
+  <text x="25"  y="165" class="label">🐛 Total Issues:</text>
+  <text x="370" y="165" class="value">0</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="495" height="195" viewBox="0 0 495 195"
+     fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: 600 17px "Segoe UI",sans-serif; fill:#70a5fd }
+    .label { font: 400 12px "Segoe UI",sans-serif; fill:#c9d1d9 }
+  </style>
+  <rect width="495" height="195" rx="10" fill="#0d1117"/>
+  <text x="25" y="35" class="title">🗣️ Most Used Languages</text>
+  
+    <circle cx="31" cy="86" r="5" fill="#f1e05a"/>
+    <text x="41" y="90" class="label">JavaScript 41.0%</text>
+    <circle cx="31" cy="100" r="5" fill="#663399"/>
+    <text x="41" y="104" class="label">CSS 17.9%</text>
+    <circle cx="31" cy="114" r="5" fill="#e34c26"/>
+    <text x="41" y="118" class="label">HTML 12.2%</text>
+    <circle cx="31" cy="128" r="5" fill="#DA5B0B"/>
+    <text x="41" y="132" class="label">Jupyter Notebook 12.2%</text>
+    <circle cx="261" cy="86" r="5" fill="#b07219"/>
+    <text x="271" y="90" class="label">Java 10.1%</text>
+    <circle cx="261" cy="100" r="5" fill="#3572A5"/>
+    <text x="271" y="104" class="label">Python 6.6%</text>
+</svg>
