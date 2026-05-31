@@ -1,0 +1,167 @@
+name: Generate GitHub Stats SVGs
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # runs every day at midnight UTC
+  push:
+    branches: [main]
+  workflow_dispatch:        # allows manual trigger from Actions tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate stats SVGs
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+          USERNAME: SriramKannan2005
+        run: |
+          mkdir -p assets
+          python - << 'PYEOF'
+          import requests, os, sys
+
+          token    = os.environ["STATS_TOKEN"]
+          username = os.environ["USERNAME"]
+          headers  = {"Authorization": f"bearer {token}",
+                      "Content-Type": "application/json"}
+
+          # ── GraphQL query ──────────────────────────────────────────────
+          query = """
+          {
+            user(login: "%s") {
+              name
+              login
+              followers { totalCount }
+              repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
+                nodes {
+                  stargazers { totalCount }
+                  languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+                    edges { size node { name color } }
+                  }
+                }
+              }
+              contributionsCollection {
+                totalCommitContributions
+                totalPullRequestContributions
+                totalIssueContributions
+                totalRepositoryContributions
+              }
+            }
+          }
+          """ % username
+
+          resp = requests.post("https://api.github.com/graphql",
+                               json={"query": query}, headers=headers)
+          resp.raise_for_status()
+          data = resp.json()["data"]["user"]
+
+          # ── Aggregate stats ────────────────────────────────────────────
+          stars   = sum(r["stargazers"]["totalCount"] for r in data["repositories"]["nodes"])
+          contrib = data["contributionsCollection"]
+          commits = contrib["totalCommitContributions"]
+          prs     = contrib["totalPullRequestContributions"]
+          issues  = contrib["totalIssueContributions"]
+          repos   = data["repositories"]["nodes"]
+          followers = data["followers"]["totalCount"]
+
+          # ── Aggregate top languages ────────────────────────────────────
+          lang_sizes = {}
+          lang_colors = {}
+          for repo in repos:
+              for edge in repo["languages"]["edges"]:
+                  name  = edge["node"]["name"]
+                  color = edge["node"]["color"] or "#858585"
+                  size  = edge["size"]
+                  lang_sizes[name]  = lang_sizes.get(name, 0) + size
+                  lang_colors[name] = color
+
+          top_langs = sorted(lang_sizes.items(), key=lambda x: x[1], reverse=True)[:8]
+          total_size = sum(s for _, s in top_langs) or 1
+
+          # ── Build stats.svg ────────────────────────────────────────────
+          stats_svg = f"""<svg width="495" height="195" viewBox="0 0 495 195"
+               fill="none" xmlns="http://www.w3.org/2000/svg">
+            <style>
+              .title {{ font: 600 17px "Segoe UI",sans-serif; fill:#70a5fd }}
+              .label {{ font: 400 13px "Segoe UI",sans-serif; fill:#c9d1d9 }}
+              .value {{ font: 600 14px "Segoe UI",sans-serif; fill:#c9d1d9 }}
+              .icon  {{ fill:#bf91f3 }}
+            </style>
+            <rect width="495" height="195" rx="10" fill="#0d1117"/>
+            <text x="25" y="35" class="title">📊 {data["login"]}'s GitHub Stats</text>
+
+            <!-- Stars -->
+            <text x="25"  y="75" class="label">⭐ Total Stars Earned:</text>
+            <text x="370" y="75" class="value">{stars}</text>
+
+            <!-- Commits -->
+            <text x="25"  y="105" class="label">📦 Total Commits (this year):</text>
+            <text x="370" y="105" class="value">{commits}</text>
+
+            <!-- PRs -->
+            <text x="25"  y="135" class="label">🔀 Total PRs:</text>
+            <text x="370" y="135" class="value">{prs}</text>
+
+            <!-- Issues -->
+            <text x="25"  y="165" class="label">🐛 Total Issues:</text>
+            <text x="370" y="165" class="value">{issues}</text>
+          </svg>"""
+
+          with open("assets/stats.svg", "w") as f:
+              f.write(stats_svg)
+
+          # ── Build langs.svg ────────────────────────────────────────────
+          bar_y   = 90
+          row_h   = 14
+          bar_w   = 235
+          items   = ""
+          bar_x   = 25
+          for i, (name, size) in enumerate(top_langs):
+              pct   = size / total_size * 100
+              color = lang_colors[name]
+              col   = 0 if i < 4 else 1
+              row   = i if i < 4 else i - 4
+              lx    = 25  + col * 230
+              ly    = bar_y + row * row_h
+              items += f"""
+              <circle cx="{lx+6}" cy="{ly-4}" r="5" fill="{color}"/>
+              <text x="{lx+16}" y="{ly}" class="label">{name} {pct:.1f}%</text>"""
+
+          langs_svg = f"""<svg width="495" height="195" viewBox="0 0 495 195"
+               fill="none" xmlns="http://www.w3.org/2000/svg">
+            <style>
+              .title {{ font: 600 17px "Segoe UI",sans-serif; fill:#70a5fd }}
+              .label {{ font: 400 12px "Segoe UI",sans-serif; fill:#c9d1d9 }}
+            </style>
+            <rect width="495" height="195" rx="10" fill="#0d1117"/>
+            <text x="25" y="35" class="title">🗣️ Most Used Languages</text>
+            {items}
+          </svg>"""
+
+          with open("assets/langs.svg", "w") as f:
+              f.write(langs_svg)
+
+          print("SVGs generated successfully.")
+          PYEOF
+
+      - name: Commit and push SVGs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/langs.svg
+          git diff --cached --quiet || git commit -m "chore: update stats SVGs [skip ci]"
+          git push
