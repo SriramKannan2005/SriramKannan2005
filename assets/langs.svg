@@ -8,15 +8,15 @@
   <text x="25" y="35" class="title">🗣️ Most Used Languages</text>
   
     <circle cx="31" cy="86" r="5" fill="#e34c26"/>
-    <text x="41" y="90" class="label">HTML 44.9%</text>
+    <text x="41" y="90" class="label">HTML 44.5%</text>
     <circle cx="31" cy="100" r="5" fill="#DA5B0B"/>
-    <text x="41" y="104" class="label">Jupyter Notebook 38.9%</text>
+    <text x="41" y="104" class="label">Jupyter Notebook 38.5%</text>
     <circle cx="31" cy="114" r="5" fill="#f1e05a"/>
     <text x="41" y="118" class="label">JavaScript 7.4%</text>
     <circle cx="31" cy="128" r="5" fill="#3572A5"/>
-    <text x="41" y="132" class="label">Python 3.6%</text>
+    <text x="41" y="132" class="label">Python 4.5%</text>
     <circle cx="261" cy="86" r="5" fill="#663399"/>
-    <text x="271" y="90" class="label">CSS 3.3%</text>
+    <text x="271" y="90" class="label">CSS 3.2%</text>
     <circle cx="261" cy="100" r="5" fill="#b07219"/>
     <text x="271" y="104" class="label">Java 1.9%</text>
 </svg>
